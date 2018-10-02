@@ -5,7 +5,8 @@ class TableViewController: UITableViewController {
     let reuseIdentifier = "cell"
     let casey = Pets(name: "Casey", type: "Dog")
     let jack = Pets(name: "Jack", type: "Dog")
-    
+    let fox = Pets(name: "Foxy", type: "Fox")
+    let kangaroo = Pets(name: "Jumpy", type: "Kangaroo")
     
     
     override func viewDidLoad() {
@@ -13,6 +14,8 @@ class TableViewController: UITableViewController {
         // Do any additional setup after loading the view, typically from a nib.
         Model.shared.pets.append(casey)
         Model.shared.pets.append(jack)
+        Model.shared.pets.append(fox)
+        Model.shared.pets.append(kangaroo)
         tableView.reloadData()
     }
 
